@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    height: 60px;
+    background-color: #30323e;
+    color: #fff;
+    font-size: 30px;
+}
+
