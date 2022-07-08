@@ -6,13 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dc4706ccea.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
     <header>:hiperDCR</header>
 
     <main>
-        <p id="main-frase">Faça o upload do arquivo a ser validado</p>
+        <div class="upload">
+            <p id="main-frase">Faça o upload do arquivo PDF a ser validado.</p>
+            <form action="source.py" method="post">
+                <i class="fa-solid fa-file-arrow-up">
+                    <input type="file" class="file" accept="application/pdf">
+                </i>
+                <button type="submit" class="btn active">Enviar</button>
+            </form>        
+        </div>
     </main>
 
     <script src="script.js"></script>
