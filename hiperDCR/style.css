@@ -9,11 +9,12 @@
 header {
     display: flex;
     align-items: center;
-    padding-left: 30px;
+    padding-left: 20px;
     height: 60px;
     background-color: #30323e;
     color: #fff;
     font-size: 30px;
+    font-weight: bold;
 }
 
 .upload {
@@ -28,18 +29,34 @@ header {
 }
 
 .upload i {
-    cursor: pointer;
+    transform: translateX(110px);
     margin-top: 30px;
+}
+
+.btn {
+    transform: translateX(110px);
+    height: 25px;
+    width: 80px;
+    color: #30323e;
+    background-color: #ddd;
+    border-radius: 5px;
+    cursor: not-allowed;
+    border: none;
+}
+
+.btn.active {
+    background-color: #30323e;
+    color: #fff;
+    cursor: pointer;
 }
 
 .fa-solid.fa-file-arrow-up {
     display: flex;
-    position: relative;
     font-size: 100px;
+    flex-direction: column;
 }
 
 .file {
-    position: absolute;
-    height: 100px;
-    opacity: 0;
+    cursor: pointer;
+    margin-top: 10px;
 }
