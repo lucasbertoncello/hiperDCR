@@ -27,7 +27,11 @@ export class AppComponent {
 
             const upload$ = this.http.post("/api/pdf-upload", formData);
 
-            upload$.subscribe();
+            upload$.subscribe(
+                data => console.log('success' + data),
+                error => console.log(error)
+            );
+            // console.log(upload$.subscribe(d => console.log(d)))
         }
     }
 }
