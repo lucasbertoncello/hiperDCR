@@ -6,8 +6,9 @@
         <form>
             <i class="fa-solid fa-file-arrow-up">
                 <input type="file" class="file-input"
-                (change)="onFileSelected($event)" #fileUpload>
+                (change)="onFileSelected($event)" accept=".pdf" #fileUpload>
             </i>
             <button type="submit" class="btn active">Enviar</button>
         </form>        
+        <p [className]="isActive ? 'result success' : 'result'"> Aprovado!</p>
     </div>
