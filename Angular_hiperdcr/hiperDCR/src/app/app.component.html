@@ -1,0 +1,14 @@
+<header>:hiperDCR</header>
+
+<main>
+    <div class="upload">
+        <p id="main-frase">Faça o upload do arquivo PDF a ser validado.</p>
+        <form>
+            <i class="fa-solid fa-file-arrow-up">
+                <input type="file" class="file-input"
+                (change)="onFileSelected($event)" #fileUpload>
+            </i>
+            <button type="submit" class="btn active">Enviar</button>
+        </form>        
+    </div>
+</main>
