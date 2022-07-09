@@ -11,6 +11,8 @@ export class AppComponent {
 
   fileName = '';
 
+  isActive = false
+
     constructor(private http: HttpClient) {}
 
     onFileSelected(event: any) {
@@ -28,7 +30,7 @@ export class AppComponent {
             const upload$ = this.http.post("/api/pdf-upload", formData);
 
             upload$.subscribe(
-                data => console.log('success' + data),
+                data => this.isActive = true,
                 error => console.log(error)
             );
             // console.log(upload$.subscribe(d => console.log(d)))

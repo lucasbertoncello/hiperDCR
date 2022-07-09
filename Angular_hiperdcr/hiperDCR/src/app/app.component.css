@@ -38,6 +38,16 @@
     border: none;
 }
 
+.result {
+    opacity: 0;
+}
+
+.result.success {
+    margin-top: 35px;
+    transform: translateX(30px);
+    opacity: 1;
+}
+
 .btn.active {
     background-color: #30323e;
     color: #fff;
